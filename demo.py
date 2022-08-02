@@ -3,6 +3,7 @@ import json
 import os
 import datetime as dt
 import re
+import sys
 import pandas as pd #엑셀 형태로 저장하기 위한 라이브러리
 from googleapiclient.errors import HttpError
 from googleapiclient.discovery import build
@@ -14,6 +15,7 @@ from bs4 import BeautifulSoup
 import config
 from oauth2client.service_account import ServiceAccountCredentials
 import gspread
+
 
 
 def get_videos(service, upload_id):
@@ -115,6 +117,12 @@ def get_channel_id(value):
 
 #     return names
 
+def resource_path(relative_path):
+    if hasattr(sys, '_MEIPASS'):
+        return os.path.join(sys._MEIPASS, relative_path)
+    return os.path.join(os.path.abspath("."), relative_path)
+
+
 
 def get_link():
 
@@ -123,9 +131,7 @@ def get_link():
     "https://www.googleapis.com/auth/drive",
     ]
 
-    json_key_path = "./momof_json.json"	# JSON Key File Path
-
-    credential = ServiceAccountCredentials.from_json_keyfile_name(json_key_path, scope)
+    credential = ServiceAccountCredentials.from_json_keyfile_name(resource_path("momof_json.json"), scope)
     gc = gspread.authorize(credential)
 
 

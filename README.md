@@ -10,3 +10,4 @@
 - https://stackoverflow.com/questions/4356538/how-can-i-extract-video-id-from-youtubes-link-in-python
 - https://stackoverflow.com/questions/61365111/youtube-data-api-build-function-doesn%c2%b4t-work
 - https://jsikim1.tistory.com/205
+- https://stackoverflow.com/questions/57122622/how-to-include-json-in-executable-file-by-pyinstaller
