@@ -11,3 +11,7 @@
 - https://stackoverflow.com/questions/61365111/youtube-data-api-build-function-doesn%c2%b4t-work
 - https://jsikim1.tistory.com/205
 - https://stackoverflow.com/questions/57122622/how-to-include-json-in-executable-file-by-pyinstaller
+- https://stackoverflow.com/questions/59860831/append-rows-to-google-sheets-using-gspread-or-googleapiclient
+- https://stackoverflow.com/questions/45540827/appending-pandas-data-frame-to-google-spreadsheet
+- https://stackoverflow.com/questions/19377262/regex-for-youtube-url
+- https://stackoverflow.com/questions/45214040/splitting-the-row-into-new-line-and-adding-corresponding-matching-value-from-oth
